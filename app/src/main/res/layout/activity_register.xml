@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@color/background">
+
+
+    <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo" />
+
+    <TextView
+            android:id="@+id/create_your"
+            android:layout_width="259dp"
+            android:textFontWeight="500"
+            android:layout_height="33dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:textSize="28dp"
+            android:text="Đăng Kí"
+            android:gravity="center_horizontal|top"
+            android:textColor="@color/white"
+    />
+
+
+    <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/background"
+                android:orientation="vertical"
+                android:gravity="center"
+        >
+            <RelativeLayout
+                    android:id="@+id/layoutEmail"
+                    android:layout_width="340dp"
+                    android:layout_height="55dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginTop="16dp"
+                    android:layout_alignParentTop="true"
+                    android:background="@drawable/rectangle_">
+                <ImageView
+                        android:id="@+id/iconMail"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginStart="16dp"
+                        android:src="@drawable/email"/>
+                <EditText
+                        android:id="@+id/etEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/iconMail"
+                        android:layout_marginStart="8dp"
+                        android:textColorHint="#FFFFFF"
+                        android:hint="Email"
+                        android:textColor="#FFFFFF"
+                        android:textSize="16sp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+            android:id="@+id/layoutUser"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_">
+        <ImageView
+                android:id="@+id/iconUser"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/profile" />
+        <EditText
+                android:id="@+id/etUser"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iconUser"
+                android:layout_marginStart="8dp"
+                android:textColorHint="#FFFFFF"
+                android:hint="Tên Người Dùng"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+    </RelativeLayout>
+    <RelativeLayout
+            android:id="@+id/layoutNumber"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="16dp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/rectangle_">
+        <ImageView
+                android:id="@+id/iconNumber"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/phone" />
+        <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iconNumber"
+                android:layout_marginStart="8dp"
+                android:textColorHint="#FFFFFF"
+                android:hint="Số Điện Thoại"
+                android:textColor="#FFFFFF"
+                android:textSize="16sp" />
+    </RelativeLayout>
+
+
+    <RadioGroup
+        android:id="@+id/radioGioiTinh"
+        android:hint="Chọn Giới Tính"
+        android:orientation="horizontal"
+        android:textColorHint="#325535"
+        android:textColor="#FFFFFF"
+        android:layout_width="340dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="16dp"
+        android:layout_alignParentTop="true"
+    >
+        <RadioButton
+                android:id="@+id/radioButtonMale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="16dp"
+                android:text="Nam"
+                android:tag="1"
+                android:textColorHint="#325535"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rectangle_"
+        />
+        <RadioButton
+                android:id="@+id/radioButtonFemale"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Nữ"
+                android:tag="2"
+                android:textColorHint="#325535"
+                android:textColor="#FFFFFF"
+                android:background="@drawable/rectangle_"/>
+    </RadioGroup>
+
+    <RelativeLayout
+            android:id="@+id/layoutPassword"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_">
+        <ImageView
+                android:id="@+id/iconPassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/password" />
+        <EditText
+                android:id="@+id/etPassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iconPassword"
+                android:layout_marginStart="8dp"
+                android:hint="Mật khẩu"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+            android:id="@+id/layoutRePassword"
+            android:layout_width="340dp"
+            android:layout_height="55dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rectangle_">
+        <ImageView
+                android:id="@+id/iconRePassword"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/password" />
+        <EditText
+                android:id="@+id/etRePassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_toEndOf="@id/iconRePassword"
+                android:layout_marginStart="8dp"
+                android:hint="Nhập Lại Mật khẩu"
+                android:inputType="textPassword"
+                android:textColor="#FFFFFF"
+                android:textColorHint="#FFFFFF"
+                android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+            android:id="@+id/textViewError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:textColor="#FF0000" />
+    <Button
+            android:id="@+id/btnRegister123"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Đăng ký"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:textColorHint="#325535"
+            android:textColor="#FFFFFF"
+            android:background="@drawable/rectangle_6"
+    />
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
